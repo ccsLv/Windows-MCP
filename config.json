@@ -1,0 +1,22 @@
+{
+    "api_key": "sk-ac3a4329ad1040228a0607564d13ac15",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "model": "qwen-plus",
+    "ui": {
+        "window_width": 400,
+        "window_height": 500,
+        "ball_size": 60,
+        "ball_color": "#4A90E2",
+        "ball_hover_color": "#357ABD",
+        "chat_bg_color": "#F5F5F5",
+        "user_bg_color": "#4A90E2",
+        "ai_bg_color": "#FFFFFF",
+        "font_family": "Microsoft YaHei UI",
+        "font_size": 10
+    },
+    "desktop": {
+        "failsafe": false,
+        "pause": 0.1,
+        "encoding": "utf-8"
+    }
+}

@@ -13,9 +13,18 @@ import ctypes
 import locale
 import csv
 import io
+import pythoncom
+import threading
 
 class Desktop:
     def __init__(self):
+        # 初始化COM（解决UIAutomation初始化问题）
+        try:
+            pythoncom.CoInitialize()
+        except Exception:
+            # 如果已经初始化过，忽略错误
+            pass
+        
         ctypes.windll.user32.SetProcessDPIAware()
         self.encoding=locale.getpreferredencoding()
         self.desktop_state=None
